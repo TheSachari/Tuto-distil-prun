@@ -9,7 +9,7 @@ pip install torch torchvision torchaudio  # ou version CUDA adaptée à votre GP
 
 ## Lancer (toutes les étapes par défaut)
 ```bash
-python -m tuto_model_shrink.main   --epochs 2   --qat_epochs 2   --prune_ratio 0.5   --batch 128   --data_dir ./data   --out_dir ./artifacts
+python -m main.py   --epochs 2   --qat_epochs 2   --prune_ratio 0.5   --batch 128   --data_dir ./data   --out_dir ./artifacts
 ```
 
 ## Choisir précisément les méthodes (flags ON/OFF)
@@ -26,15 +26,15 @@ Chaque étape peut être activée/désactivée via des booléens `--flag` / `--n
 ### Exemples
 - Distillation + DynQuant seulement :
 ```bash
-python -m tuto_model_shrink.main --no-prune --no-qat
+python -m main.py --no-prune --no-qat
 ```
 - Pruning uniquement (sans distillation) :
 ```bash
-python -m tuto_model_shrink.main --no-distill --prune --prune_ratio 0.7
+python -m main.py --no-distill --prune --prune_ratio 0.7
 ```
 - Désactiver toute quantization :
 ```bash
-python -m tuto_model_shrink.main --no-dynquant --no-qat --no-fp16
+python -m main.py --no-dynquant --no-qat --no-fp16
 ```
 
 ## Sorties
