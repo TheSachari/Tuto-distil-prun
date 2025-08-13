@@ -1,6 +1,6 @@
 # tuto_model_shrink (modulaire)
 
-Ce projet démontre comment appliquer **distillation**, **pruning**, **quantization** et **compression** sur un CNN PyTorch (MNIST), avec un code **découpé en modules** et des **toggles CLI** pour activer/désactiver chaque étape.
+Ce projet démontre comment appliquer **distillation**, **pruning**, **quantization** et **compression** sur un CNN PyTorch (MNIST)
 
 ## Installation rapide
 ```bash
