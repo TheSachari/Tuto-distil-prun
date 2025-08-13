@@ -1,4 +1,4 @@
-# tuto_model_shrink (modulaire)
+# Tuto techniques de réduction (modulaire)
 
 Ce projet démontre comment appliquer **distillation**, **pruning**, **quantization** et **compression** sur un CNN PyTorch (MNIST)
 
